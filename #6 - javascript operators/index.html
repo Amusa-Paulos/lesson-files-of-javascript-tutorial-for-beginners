@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript operators</title>
+</head>
+<body>
+    <!-- READ THIS
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators -->
+    <h2 style="text-align:center">JAVASCRIPT OPERATORS</h2>
+    
+    <h4>Basic Javscript Operators</h4>
+    <p>Assignment operators</p>
+    <p>Comparison operators</p>
+    <p>Arithmetic operators</p>
+    <p>Logical operators</p>
+
+
+    <script>
+        //ASSIGNMENT OPERATORS
+        /*
+            =, +=, -=, *=, /=, %=, **= 
+        */
+
+        var name = "Paul";
+
+        var countUp = 0;
+        countUp += 2;
+
+        var countDown = 10;
+        countDown -= 5;
+
+        var multiplyValue = 9;
+        multiplyValue *= 6;
+
+        var divideValue = 6;
+        divideValue /= 2;
+
+        var remainderValue = 2;
+        remainderValue %= 5;
+
+        var exponentValue = 2;
+        exponentValue **= 4
+
+        // DESTRUCTURING - ES6 - ES2015
+        const numArr = [23,34,45,56];
+        // var num1 = numArr[0]
+        // var num2 = numArr[1]
+        const [num1, num2, num3, num4] = numArr
+        
+        // COMPARISON OPERATORS
+        /*
+            ==, !=, ===, !==, >, <, >=, <=, 
+        */
+        // Boolean true or false
+        var b = 2 == "2"
+        var c = 4 != 5 // 4 not equal to 4
+        var d = 3 === "3" // must be equal and the same data type
+        var e = 3 !== 3
+        let f = 7 > 4
+        let g = 8 < 5
+        let h = 5 >= 6 // false
+        let i = 9 <= 9 // true
+        
+        // ARITHMETIC OPERATORS
+        /*
+            %, ++, --, -, +, **
+        */
+
+        var add = 4 + 4 // 8
+        let min = 8 - 3 // 5
+        let remainder = 9 % 8
+        let increment = 6
+        increment++
+        var decrement = 4
+        decrement-- // 3
+        
+        // LOGICAL OPERATORS
+        /*
+            &&, ||, !, 
+        */
+        let ba = false && 6
+        let numz = 7
+        let bb = numz != 7 ? true : false
+        //console.log(bb)
+        let bv1 = 4
+        let bv2 = 6
+        if(bv1 > 3 && bv2 < 6) 
+        { // block of code
+            console.log("hello paul");
+        }
+
+        console.log(!true)
+        
+
+    </script>
+
+</body>
+</html>

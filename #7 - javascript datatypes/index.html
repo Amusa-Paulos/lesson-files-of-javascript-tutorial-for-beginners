@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript datatypes</title>
+</head>
+<body>
+    <!-- READ THIS
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures -->
+    <h2 style="text-align:center">JAVASCRIPT DATATYPES</h2>
+    <h4>Datatypes</h4>
+    <p>String</p>
+    <p>Boolean</p>
+    <p>Array</p>
+    <p>Undefined</p>
+    <p>Bigint</p>
+    <p>Function</p>
+    <p>Number Safe between [-(2^53 − 1) and 2^53 − 1)]</p>
+    <p>Symbol</p>
+    <p>Null</p>
+    <p>NaN</p>
+
+    <script>
+        var name = "Hey, Paul I am a string" // this is a string, 'Hey, Paul I am a string'
+        var isTrue = true // OR false
+        const nameArr = ['paul', 'ab', 'ayo', 'david', 'rebbecca']; //array datatype
+        let age;
+        let largeInt = 894n // bigint
+        function greet(argz) {
+            console.log("hello from the function")
+        }
+
+        const secondGreet = function () {
+            console.log("hello from the second function")
+        }
+        
+
+        const thirdGreet = () => {
+            console.log("hello from the third function")
+        }
+        greet();
+        secondGreet();
+        thirdGreet();
+
+        let number1 = 45; // integer or number
+
+        let jsSym = Symbol('Hey Paulos')
+
+        let nullVal = null
+
+        let numS = "7" / 6
+
+        console.log(numS);
+    </script>
+</body>
+</html>
